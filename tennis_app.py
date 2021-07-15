@@ -9,7 +9,7 @@ def decompress_pickle(file):
  data = pickle.load(data)
  return data
 
-model = decompress_pickle('model1.pbz2')
+model = decompress_pickle('model.pbz2')
 
 def predict_win(model, df):
 
