@@ -9,7 +9,7 @@ def decompress_pickle(file):
  data = pickle.load(data)
  return data
 
-model = decompress_pickle('model.pbz2')
+model = decompress_pickle('mymodel.pbz2')
 
 def predict_win(model, df):
 
@@ -48,7 +48,7 @@ def main():
     else:
         num_sets = form.slider(label = 'Number of sets', min_value = 0,
                             max_value = 6,
-                            value = 4,
+                            value = 3,
                             step = 1)
     mins_per_set= form.number_input(label= 'Average minutes per set', min_value=0,
                         max_value=None, value= 40)
